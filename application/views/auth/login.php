@@ -9,7 +9,13 @@
 
   <h3><?= $title ?></h3>
 
-  <form action="<?= base_url('register') ?>" method="POST">
+  <?php if( $this->session->msg ) : ?>
+    <div class="alert <?= isset( $this->session->msg_class ) ? 'red' : '' ?>">
+      <?= $this->session->msg ?>
+    </div>
+  <?php endif; ?>
+
+  <form action="<?= base_url('login') ?>" method="POST">
     <input class="form-control mb-1" type="text" name="username" placeholder="Username" autocomplete="off" value="<?php echo set_value('username'); ?>">
     <?php echo form_error('username', '<div class="alert red">', '</div>'); ?>
     <input class="form-control mb-1" type="password" name="password" placeholder="Password">

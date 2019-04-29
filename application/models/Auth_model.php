@@ -15,6 +15,14 @@ class Auth_model extends CI_Model {
     return $this->db->count_all( self::TABLE_NAME );
   }
 
+  public function findByUsername( $username )
+  {
+    $this->db->where( 'username', $username );
+    $query = $this->db->get( self::TABLE_NAME );
+
+    return $query->row_array();
+  }
+
   public function store()
   {
     $name = htmlspecialchars( ucwords( $this->input->post('name') ) );
