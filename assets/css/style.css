@@ -1,0 +1,170 @@
+/* Globals */
+html, body {
+  margin: 0px;
+  padding: 20px 50px 20px 50px;
+}
+
+table {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+/* Form */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px;
+}
+
+textarea {
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+select {
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px;
+}
+
+button {
+  padding: 5px 10px 5px 10px;
+}
+
+label {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+select.form-control,
+input.form-control,
+textarea.form-control {
+  width: 100%;
+}
+
+/* Alert */
+.alert {
+  padding: 10px;
+  font-size: 14px;
+  margin: 0px 0px 10px;
+  background-color: #eaeaea;
+}
+
+
+.alert.red {
+  background-color: red;
+}
+
+/* Navbar */
+.navbar {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 60px;
+  position: fixed;
+  background-color: #ffffff;
+  border-bottom: 1px solid #aaaaaa;
+}
+
+.navbar .navbar-brand {
+  float: left;
+  height: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 60px;
+  margin-left: 100px;
+}
+
+.navbar .navbar-link {
+  float: right;
+  margin-top: 5px;
+  margin-right: 100px;
+}
+
+.navbar .navbar-link ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.navbar .navbar-link ul li a {
+  text-decoration: none;
+}
+
+.navbar .navbar-link .navbar-link-dropdown {
+  top: 65px;
+  right: 100px;
+  width: 140px;
+  display: none;
+  position: fixed;
+  padding: 10px 0px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding-inline-start: 0px !important;
+}
+
+.navbar .navbar-link .navbar-link-dropdown.show {
+  display: block;
+}
+
+.navbar .navbar-link .navbar-link-dropdown li {
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  display: inline-block;
+}
+
+.navbar .navbar-link .navbar-link-dropdown li a {
+  padding: 8px 15px;
+  display: inline-block;
+}
+
+.navbar .navbar-link .navbar-link-dropdown li a:hover {
+  color: #000;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+}
+
+.pagination ul {
+  padding-inline-start: 0px;
+}
+
+.pagination ul li {
+  margin: 0px 2px;
+  display: inline-block;
+}
+
+.pagination ul li a {
+  padding: 8px 12px;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #eaeaea;
+}
